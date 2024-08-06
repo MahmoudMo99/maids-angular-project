@@ -18,6 +18,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { HoverEffectDirective } from './directives/hover-effect.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LoaderComponent } from './components/loader/loader.component';
     UserCardComponent,
     UserDetailComponent,
     LoaderComponent,
+    HoverEffectDirective,
   ],
   imports: [
     BrowserModule,

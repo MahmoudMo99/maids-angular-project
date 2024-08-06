@@ -7,8 +7,10 @@
   <mat-card class="user-detail-card mt-3">
     <img mat-card-image [src]="user.avatar" alt="{{user.first_name}}">
     <mat-card-content>
-      <h2 mat-card-title>{{user.first_name}} {{user.last_name}}</h2>
+      <h2 class="pt-2">{{user.email}}</h2>
+      <h3 mat-card-title>{{user.first_name}} {{user.last_name}}</h3>
       <h4>ID: {{user.id}}</h4>
+
     </mat-card-content>
   </mat-card>
 </div>

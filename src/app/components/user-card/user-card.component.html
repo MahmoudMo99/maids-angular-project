@@ -1,7 +1,8 @@
-<mat-card class="user-card" [@slideIn]>
+<mat-card class="user-card" appHoverEffect [@slideIn]>
   <img mat-card-image [src]="user.avatar" alt="{{user.first_name}}">
   <mat-card-content>
-    <h3 mat-card-title>{{user.first_name}} {{user.last_name}}</h3>
+    <h2 mat-card-title>{{user.first_name}} {{user.last_name}}</h2>
+    <h3>{{user.email}}</h3>
     <button mat-raised-button color="primary" (click)="navigateToDetail()">View Details</button>
   </mat-card-content>
 </mat-card>

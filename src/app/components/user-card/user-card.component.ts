@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user';
 import {
   trigger,
   state,
@@ -20,7 +21,7 @@ import {
   ],
 })
 export class UserCardComponent {
-  @Input() user: any;
+  @Input() user!: User;
   constructor(private router: Router) {}
 
   navigateToDetail(): void {

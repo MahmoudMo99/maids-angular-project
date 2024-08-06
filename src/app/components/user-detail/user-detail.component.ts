@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { User } from 'src/app/models/user';
 
 @Component({
   selector: 'app-user-detail',
@@ -10,7 +11,7 @@ import { takeUntil } from 'rxjs/operators';
   styleUrls: ['./user-detail.component.css'],
 })
 export class UserDetailComponent implements OnInit, OnDestroy {
-  user: any;
+  user: User | undefined;
   loading: boolean = false;
   private destroy$ = new Subject<void>();
 

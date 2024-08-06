@@ -3,6 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { User } from 'src/app/models/user';
 import {
   trigger,
   state,
@@ -23,7 +24,7 @@ import {
   ],
 })
 export class UserListComponent implements OnInit, OnDestroy {
-  users: any[] = [];
+  users: User[] = [];
   page = 1;
   totalPages: number = 1;
   loading: boolean = false;
