@@ -1,0 +1,16 @@
+<div class="container mat-elevation-z4">
+  <app-loader *ngIf="loading"></app-loader>
+
+  <div class="mat-grid-list" *ngIf="!loading" [@fadeInOut]>
+    <div class="mat-grid-tile" *ngFor="let user of users">
+      <app-user-card [user]="user"></app-user-card>
+    </div>
+  </div>
+  <hr class="my-5">
+  <div class="pagination" *ngIf="!loading" [@fadeInOut]>
+    <button mat-raised-button color="accent" (click)="previousPage()" [disabled]="page === 1">Previous</button>
+    <span class="page-info">{{ page }} of {{ totalPages }}</span>
+    <button mat-raised-button color="primary" (click)="nextPage()" [disabled]="isNextButtonDisabled()">Next</button>
+  </div>
+
+</div>

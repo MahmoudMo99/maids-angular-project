@@ -1,0 +1,14 @@
+<div *ngIf="loading" class="container mat-elevation-z4">
+  <app-loader></app-loader>
+</div>
+
+<div *ngIf="!loading && user" class="container mat-elevation-z4">
+  <button mat-raised-button color="accent" (click)="goBack()">Back</button>
+  <mat-card class="user-detail-card mt-3">
+    <img mat-card-image [src]="user.avatar" alt="{{user.first_name}}">
+    <mat-card-content>
+      <h2 mat-card-title>{{user.first_name}} {{user.last_name}}</h2>
+      <h4>ID: {{user.id}}</h4>
+    </mat-card-content>
+  </mat-card>
+</div>

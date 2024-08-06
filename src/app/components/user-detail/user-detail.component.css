@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.user-detail-card {
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+.mat-progress-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

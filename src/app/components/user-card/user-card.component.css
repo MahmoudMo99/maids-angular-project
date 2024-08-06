@@ -1,0 +1,27 @@
+.user-card {
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+mat-card-content {
+  padding: 16px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.user-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mat-card-content {
+  text-align: center;
+}
