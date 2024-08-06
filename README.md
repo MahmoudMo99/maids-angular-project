@@ -2,7 +2,7 @@ Angular User Dashboard
 
 Overview
 
-This Angular application showcases a dynamic user dashboard, implementing advanced Angular features such as : 
+This Angular application showcases an API dynamic user dashboard, implementing advanced Angular features such as : 
 state management, observables, Angular Material for UI components, and custom animations.
 The app includes a paginated user list, a search functionality, and a user detail page with a custom loading indicator.
 
